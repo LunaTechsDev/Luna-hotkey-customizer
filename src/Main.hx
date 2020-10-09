@@ -28,22 +28,21 @@ typedef LParams = {
   var linkWindows: Array<LinkWindowInfo>;
 }
 
-@:native('LunaLinks')
-@:expose('LunaLinks')
+@:native('LunaHotKeyCustomizer')
+@:expose('LunaHotKeyCustomizer')
 class Main {
   public static var Params: LParams = null;
   public static var listener: EventEmitter = Amaryllis.createEventEmitter();
 
   public static function main() {
-    var plugin = Globals.Plugins.filter((plugin) -> ~/<LunaLinks>/ig.match(plugin.description))[0];
+    var plugin = Globals.Plugins.filter((plugin) -> ~/<LunaHKC>/ig.match(plugin.description))[0];
     var params = plugin.parameters;
     untyped Params = {
       linkWindows: JsonEx.parse(params['linkWindows']).map((win) -> JsonEx.parse(win))
     }
     trace(Params);
 
-    Comment.title('Scene_Title');
-    FnMacros.jsPatch(true, Scene_Title, TitlePatch);
+    Comment.title('Setup');
   }
 
   public static function params() {

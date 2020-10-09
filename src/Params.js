@@ -1,18 +1,17 @@
 /*:
 @author LunaTechs - Kino
-@plugindesc A plugin that lets you create links through clickable windows<LunaLinks>.
+@plugindesc A plugin that lets you create hot keys for your game from script calls<LunaHKC>.
 
 @target MV MZ
 
-@param linkWindows
-@text Link Windows
-@desc The list of link windows on your title screen.
-@type struct<LinkWindow>[]
+@param hotkeyCommands
+@text Hot Key Commands
+@desc The list of hot key commands for your game.
+@type struct<HotKeyCommand>[]
 
 @help
 
-An RPGMakerMV/MZ plugin that lets you create links to websites through clickable
-windows<LunaLinks>.
+A plugin that lets you create hot keys for your game as script calls.
 
 ==== How To Use ====
 
@@ -39,7 +38,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE
 */
 
-/*~struct~LinkWindow:
+/*~struct~HotKeyCommand:
 *
 * @param link
 * @text Link 
