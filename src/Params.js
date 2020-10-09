@@ -15,9 +15,10 @@ A plugin that lets you create hot keys for your game as script calls.
 
 ==== How To Use ====
 
-Simply f ill out your link information in the plugin parameters with the proper
-coordinates on the screen. The icon you use for your link will be mapped
-to the size of the window.
+Simply fill out the command in the plugin parameters.
+Once you fill out the command in the plugin parameters,
+it will be accessible in game by pressing that respective key on 
+the keyboard.
 
 MIT License
 Copyright (c) 2020 LunaTechsDev
@@ -40,41 +41,21 @@ SOFTWARE
 
 /*~struct~HotKeyCommand:
 *
-* @param link
-* @text Link 
-* @desc The link for the link window
-* @default google.com
+* @param name
+* @text Name 
+* @desc Name of the hot key command.
+* @default Test
 *
-* @param image
-* @text Image Name
-* @desc Name of an image in your pictures folder
-* @default Actor1_1
+* @param button
+* @text Button(Key)
+* @desc Key letter to use for the hot key command.
+* @default I
 *
-* @param x
-* @text X Position
-* @desc The X position of the link window
-* @default 0
-* 
-* @param y
-* @text Y Position
-* @desc The Y position of the link window
-* @default 0
+* @param scriptCall
+* @text Script Call
+* @desc The script call to be called when hitting the key.
+* @type note
 *
-* @param width
-* @text Width
-* @desc The width of the link window
-* @default 100
-*
-* @param height
-* @text Height 
-* @desc The height of the link window
-* @default 100
-*
-* @param backgroundType
-* @text Background Type 0 -> Opaque 1 -> Semitransparent 2 -> Transparent
-* @desc The background type of the link window
-* @default 2
-* 
 */
 
 

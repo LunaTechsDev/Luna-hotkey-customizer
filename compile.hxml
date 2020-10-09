@@ -5,7 +5,7 @@
 -D js-es=6
 
 # Enable/Disable console.log -- tracing with the below line
-# --no-traces
+--no-traces
 
 -dce full
 
